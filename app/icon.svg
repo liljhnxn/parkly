@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161a22" />
+      <stop offset="100%" stop-color="#0b0d11" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Tile -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="2.5" />
+
+  <!-- Car / Parking "P" Emblem -->
+  <path d="M22 17 H34 C41 17 45 20.5 45 26.5 C45 32.5 41 36 34 36 H28 V47 H22 V17 Z M28 22.5 V30.5 H33.5 C37 30.5 39 29 39 26.5 C39 24 37 22.5 33.5 22.5 H28 Z" fill="url(#accentGrad)" />
+
+  <!-- Small Glowing Dot Accent -->
+  <circle cx="43" cy="45" r="3.5" fill="#10b981" />
+</svg>
+
