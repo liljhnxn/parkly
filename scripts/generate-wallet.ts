@@ -8,11 +8,10 @@ async function main() {
   console.log("Private Key:", wallet.privateKey);
   console.log("-----------------------------------------");
   console.log("To deploy:");
-  console.log("1. Fund this address with Botchain testnet BOHR at https://scan.bohr.life");
+  console.log("1. Fund this address with Botchain Mainnet BOT token");
   console.log("2. Add PRIVATE_KEY=" + wallet.privateKey + " to your .env file");
-  console.log("3. Run: npm run deploy:botchain");
+  console.log("3. Run: npm run deploy:mainnet");
   console.log("-----------------------------------------");
 }
 
 main();
-

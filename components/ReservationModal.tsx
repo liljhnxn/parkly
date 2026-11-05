@@ -265,7 +265,7 @@ export function ReservationModal({
                   </h4>
                 </div>
                 <p className="text-xs text-gray-300">
-                  Your reservation is immutably recorded on Botchain Testnet.
+                  Your reservation is immutably recorded on Botchain Mainnet.
                 </p>
 
                 {confirmedResId && (

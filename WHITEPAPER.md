@@ -31,7 +31,7 @@ Urban parking is notoriously fragmented, inefficient, and expensive. Drivers spe
 
 ## 3. The Parkly Solution
 
-Parkly replaces centralized middlemen with an immutable, deterministic smart contract engine running on the high-performance **Botchain** testnet.
+Parkly replaces centralized middlemen with an immutable, deterministic smart contract engine running on the high-performance **Botchain** Mainnet.
 
 ```
 ┌────────────────────────────────────────────────────────┐
@@ -46,7 +46,7 @@ Parkly replaces centralized middlemen with an immutable, deterministic smart con
                              │
                              ▼
 ┌────────────────────────────────────────────────────────┐
-│              Parkly.sol (Botchain - 968)               │
+│              Parkly.sol (Botchain - 677)               │
 │  - Overlap Prevention Algorithm                        │
 │  - Owner/Driver Access Control                         │
 │  - Custom Gas-Optimized Error Handling                 │
@@ -64,7 +64,7 @@ Parkly replaces centralized middlemen with an immutable, deterministic smart con
 
 ### 4.1 Technology Stack
 * **Smart Contract Layer:** Solidity `^0.8.20` with custom errors and optimized gas execution.
-* **Blockchain Host:** Botchain Testnet (EVM-compatible, 20 Gwei gas fee, high throughput, sub-second finality).
+* **Blockchain Host:** Botchain Mainnet (Chain ID 677, EVM-compatible, 20 Gwei gas fee, high throughput, sub-second finality).
 * **Frontend Client:** Next.js 15 (App Router), TypeScript, Tailwind CSS, Lucide Icons.
 * **Web3 Abstraction:** wagmi v2, viem v2, MetaMask / Injected Provider.
 
@@ -119,7 +119,7 @@ If this condition evaluates to true for any active reservation on that space ID,
 ## 6. Ecosystem & Economic Model
 
 * **Native Currency:** Transactions and hourly valuations are denominated in `BOT`, driving fundamental utility and transaction volume to the Botchain network.
-* **Platform Fee:** 0% protocol rent during testnet and initial adoption, establishing network effects.
+* **Platform Fee:** 0% protocol rent during initial launch and adoption, establishing network effects.
 * **Scalability:** Gas-efficient custom Solidity errors keep state manipulation costs minimal.
 
 ---
@@ -129,8 +129,8 @@ If this condition evaluates to true for any active reservation on that space ID,
 ### Phase 1: Inception & Core Protocol (Completed)
 - [x] Full Solidity implementation of `Parkly.sol`.
 - [x] 28/28 unit test coverage passing with Hardhat.
-- [x] Testnet deployment to Botchain (Chain ID: `968`).
-- [x] Source code verification on BohrScan.
+- [x] Mainnet deployment to Botchain (Chain ID: `677`).
+- [x] Source code verification on BotchainScan.
 - [x] Responsive Next.js 15 Web3 user interface.
 
 ### Phase 2: Hardware & IoT Gate Integration (Q1 2027)

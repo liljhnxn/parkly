@@ -47,7 +47,7 @@ async function main() {
   await parkly.waitForDeployment();
 
   const contractAddress = await parkly.getAddress();
-  const explorerBase = network.config.chainId === 677 ? "https://scan.botchain.ai" : "https://scan.bohr.life";
+  const explorerBase = "https://scan.botchain.ai";
 
   console.log("----------------------------------------------------");
   console.log("🎉 SUCCESS: Parkly Contract Deployed to Mainnet!");

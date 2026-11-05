@@ -26,7 +26,7 @@
 ## Slide 3: The Solution (Parkly)
 * **Peer-to-Peer Parking Economy:** Anyone can list an open parking bay in under 60 seconds.
 * **Mathematical Overlap Prevention:** Built-in EVM logic prevents double bookings at the protocol level.
-* **Frictionless Web3 Payments:** Direct BOHR native transactions with zero middleman markups.
+* **Frictionless Web3 Payments:** Direct BOT native transactions with zero middleman markups.
 * **Privacy by Default:** Zero personal identifiable information (PII) collected or stored.
 
 ---
@@ -51,7 +51,7 @@
 * **Why Botchain?**
   * Sub-second block times for instantaneous booking confirmation.
   * Ultra-low transaction fees allowing micro-transactions for short parking durations.
-  * Verified contract deployment on [BohrScan](https://scan.bohr.life).
+  * Verified contract deployment on [BotchainScan](https://scan.botchain.ai).
 * **Frontend:** Next.js 15 App Router, React 19, TypeScript, Tailwind CSS, wagmi & viem.
 
 ---
@@ -64,8 +64,8 @@
 ---
 
 ## Slide 8: Traction & Milestones
-* **Core Contract Live:** Deployed on Botchain Testnet (`0xE008...7f6F`).
-* **Source Verified:** 100% verified on BohrScan block explorer.
+* **Core Contract Live:** Deployed on Botchain Mainnet (`0xe822F7F3FD58c89cdcb6dEdADAb273a503F7DF63`).
+* **Source Verified:** 100% verified on BotchainScan block explorer.
 * **Test Suite:** 28 passing tests covering 100% of functional requirements and edge cases.
 * **Working DApp:** End-to-end functional UI with live RPC querying.
 

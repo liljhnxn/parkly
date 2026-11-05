@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { useAccount, useConnect, useDisconnect, useSwitchChain, useBalance } from "wagmi";
 import { botchainMainnet } from "@/lib/chain";
 import { shortenAddress, getExplorerAddressUrl } from "@/lib/contracts/config";
@@ -14,6 +15,7 @@ import {
   LogOut,
   AlertTriangle,
   ChevronDown,
+  Globe,
 } from "lucide-react";
 
 export function Header() {
@@ -67,7 +69,7 @@ export function Header() {
                 PARK<span className="text-emerald-400">LY</span>
               </span>
               <span className="text-[10px] uppercase tracking-wider font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300">
-                Botchain
+                Mainnet
               </span>
             </div>
             <p className="text-xs text-gray-400 hidden sm:block">
@@ -76,8 +78,42 @@ export function Header() {
           </div>
         </div>
 
-        {/* Right Action / Wallet */}
-        <div className="flex items-center gap-3">
+        {/* Middle / Right Action / Links & Wallet */}
+        <div className="flex items-center gap-2.5 sm:gap-3">
+          {/* BOT Chain Website Link */}
+          <a
+            href="https://botchain.ai"
+            target="_blank"
+            rel="noreferrer"
+            className="hidden md:inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-charcoal-850 hover:bg-charcoal-800 border border-charcoal-750 text-xs font-medium text-gray-300 hover:text-white transition"
+            title="BOT Chain Official Website"
+          >
+            <div className="w-4 h-4 rounded overflow-hidden relative shrink-0">
+              <Image
+                src="/botchain-logo.png"
+                alt="BOT Chain"
+                width={16}
+                height={16}
+                className="object-cover"
+              />
+            </div>
+            <span>BOT Chain</span>
+            <ExternalLink className="w-3 h-3 text-gray-500" />
+          </a>
+
+          {/* BOT Chain Explorer Link */}
+          <a
+            href="https://scan.botchain.ai"
+            target="_blank"
+            rel="noreferrer"
+            className="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-charcoal-850 hover:bg-charcoal-800 border border-charcoal-750 text-xs font-medium text-emerald-400 hover:text-emerald-300 transition"
+            title="BOT Chain Explorer"
+          >
+            <Globe className="w-3.5 h-3.5" />
+            <span>Explorer</span>
+            <ExternalLink className="w-3 h-3 text-gray-500" />
+          </a>
+
           {isWrongNetwork && (
             <button
               onClick={() => switchChain({ chainId: botchainMainnet.id })}
