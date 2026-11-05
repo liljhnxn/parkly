@@ -1,9 +1,9 @@
 # Parkly Whitepaper: Decentralized Parking Space Management & Reservations
 
 **Version:** 1.0  
-**Network:** Botchain Testnet (Chain ID: `968`)  
-**Contract Address:** `0xE00857F9e625ec7D7272febc750C7391cfeC7f6F`  
-**Verified Source Code:** [BohrScan Verification](https://scan.bohr.life/address/0xE00857F9e625ec7D7272febc750C7391cfeC7f6F#code)  
+**Network:** Botchain Mainnet (Chain ID: `677`)  
+**Contract Address:** `0xe822F7F3FD58c89cdcb6dEdADAb273a503F7DF63`  
+**Verified Source Code:** [BotchainScan Verification](https://scan.botchain.ai/address/0xe822F7F3FD58c89cdcb6dEdADAb273a503F7DF63#code)  
 **GitHub Repository:** [https://github.com/liljhnxn/parkly](https://github.com/liljhnxn/parkly)  
 
 ---
@@ -12,7 +12,7 @@
 
 Urban parking is notoriously fragmented, inefficient, and expensive. Drivers spend millions of hours circling congested city centers searching for parking, while private residential and commercial spaces remain underutilized. Existing Web2 parking aggregators charge predatory convenience fees (15%–35%), harvest sensitive consumer location data, and operate opaque, centralized databases prone to phantom bookings and double reservation errors.
 
-**Parkly** is an open, trustless, and decentralized parking infrastructure protocol deployed on the **Botchain** blockchain. Parkly enables private and commercial parking space owners to seamlessly tokenize the availability of physical parking slots and monetize them directly in BOHR. Drivers can explore real-time availability and lock in cryptographically verified reservations without intermediaries, account lock-in, or hidden commissions.
+**Parkly** is an open, trustless, and decentralized parking infrastructure protocol deployed on the **Botchain** blockchain. Parkly enables private and commercial parking space owners to seamlessly tokenize the availability of physical parking slots and monetize them directly in BOT. Drivers can explore real-time availability and lock in cryptographically verified reservations without intermediaries, account lock-in, or hidden commissions.
 
 ---
 
@@ -112,13 +112,13 @@ If this condition evaluates to true for any active reservation on that space ID,
 1. **Zero Personal Identifiable Information (PII):** Parkly does not collect or store user names, phone numbers, email addresses, or physical vehicle license plates.
 2. **Access Control Modifiers:** Ownership checks (`onlySpaceOwner`) and authorization boundaries prevent unauthorized cancellations or malicious parameter edits.
 3. **Anti-Self-Dealing:** Space owners are cryptographically blocked from reserving their own parking slots (`CannotReserveOwnSpace`).
-4. **Verified Codebase:** The entire smart contract bytecode is verified on [BohrScan](https://scan.bohr.life/address/0xE00857F9e625ec7D7272febc750C7391cfeC7f6F#code).
+4. **Verified Codebase:** The entire smart contract bytecode is verified on [BotchainScan](https://scan.botchain.ai/address/0xe822F7F3FD58c89cdcb6dEdADAb273a503F7DF63#code).
 
 ---
 
 ## 6. Ecosystem & Economic Model
 
-* **Native Currency:** Transactions and hourly valuations are denominated in `BOHR`, driving fundamental utility and transaction volume to the Botchain network.
+* **Native Currency:** Transactions and hourly valuations are denominated in `BOT`, driving fundamental utility and transaction volume to the Botchain network.
 * **Platform Fee:** 0% protocol rent during testnet and initial adoption, establishing network effects.
 * **Scalability:** Gas-efficient custom Solidity errors keep state manipulation costs minimal.
 
@@ -148,3 +148,4 @@ If this condition evaluates to true for any active reservation on that space ID,
 ## 8. Conclusion
 
 Parkly provides an essential real-world asset (RWA) infrastructure puzzle piece for the decentralized economy. By matching latent urban parking capacity with real-time consumer demand via Botchain smart contracts, Parkly creates a trustless, private, and equitable marketplace for modern urban mobility.
+

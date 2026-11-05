@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useAccount } from "wagmi";
 import { createPublicClient, http } from "viem";
-import { botchainTestnet } from "@/lib/chain";
+import { botchainMainnet } from "@/lib/chain";
 import { PARKLY_CONTRACT_ADDRESS, BOTCHAIN_RPC_URL, getExplorerAddressUrl } from "@/lib/contracts/config";
 import { PARKLY_ABI } from "@/lib/contracts/abi";
 import { ParkingSpace, Reservation } from "@/lib/types";
@@ -40,7 +40,7 @@ export default function HomePage() {
       }
 
       const client = createPublicClient({
-        chain: botchainTestnet,
+        chain: botchainMainnet,
         transport: http(BOTCHAIN_RPC_URL),
       });
 
@@ -107,7 +107,7 @@ export default function HomePage() {
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-semibold mb-3">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>Decentralized Parking Infrastructure &bull; Botchain Testnet</span>
+                <span>Decentralized Parking Infrastructure &bull; Botchain Mainnet</span>
               </div>
               <h1 className="text-2xl sm:text-4xl font-black tracking-tight text-white font-sans leading-tight">
                 Decentralized Parking Management & Instant Reservations
@@ -190,7 +190,7 @@ export default function HomePage() {
           <div className="flex items-center gap-2">
             <Car className="w-4 h-4 text-emerald-400" />
             <span className="font-bold text-gray-300">Parkly</span>
-            <span>&bull; Powered by Botchain (Chain ID: 968)</span>
+            <span>&bull; Powered by Botchain (Chain ID: 677)</span>
           </div>
           <div>
             <span>Smart contract automated &bull; No middleman fees</span>

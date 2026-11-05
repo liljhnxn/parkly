@@ -157,7 +157,7 @@ export function EditSpaceModal({
 
           <div>
             <label className="block text-xs font-semibold text-gray-300 mb-1.5">
-              Hourly Rate (BOHR)
+              Hourly Rate (BOT)
             </label>
             <div className="relative">
               <Coins className="w-4 h-4 text-gray-500 absolute left-3.5 top-1/2 -translate-y-1/2" />

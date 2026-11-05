@@ -211,7 +211,7 @@ export function MySpaces({ spaces, reservations, onRefresh }: MySpacesProps) {
                       </span>
                       <span className="flex items-center gap-1.5 font-mono text-emerald-300">
                         <Coins className="w-3.5 h-3.5 text-emerald-400" />
-                        {formatEther(space.hourlyRate)} BOHR / hr
+                        {formatEther(space.hourlyRate)} BOT / hr
                       </span>
                       <span className="flex items-center gap-1.5 text-purple-300">
                         <Calendar className="w-3.5 h-3.5 text-purple-400" />

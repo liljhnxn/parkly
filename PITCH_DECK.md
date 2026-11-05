@@ -1,9 +1,9 @@
 # Parkly — Investor & Ecosystem Pitch Deck
 
 > **Tagline:** Find a space. Park with ease.  
-> **Network:** Botchain Testnet (Chain ID: `968`)  
+> **Network:** Botchain Mainnet (Chain ID: `677`)  
 > **Demo URL:** [http://localhost:3000](http://localhost:3000)  
-> **Contract Explorer:** [0xE00857F9e625ec7D7272febc750C7391cfeC7f6F](https://scan.bohr.life/address/0xE00857F9e625ec7D7272febc750C7391cfeC7f6F#code)  
+> **Contract Explorer:** [0xe822F7F3FD58c89cdcb6dEdADAb273a503F7DF63](https://scan.botchain.ai/address/0xe822F7F3FD58c89cdcb6dEdADAb273a503F7DF63#code)  
 > **Repository:** [https://github.com/liljhnxn/parkly](https://github.com/liljhnxn/parkly)  
 
 ---
@@ -88,4 +88,5 @@
 * **Next Steps:** Seed grant funding, pilot deployment in target urban centers, and IoT barrier arm integrations.
 * **Contact & Links:**
   * GitHub: [github.com/liljhnxn/parkly](https://github.com/liljhnxn/parkly)
-  * Contract: [scan.bohr.life/address/0xE00857F9e625ec7D7272febc750C7391cfeC7f6F](https://scan.bohr.life/address/0xE00857F9e625ec7D7272febc750C7391cfeC7f6F#code)
+  * Contract: [scan.botchain.ai/address/0xe822F7F3FD58c89cdcb6dEdADAb273a503F7DF63](https://scan.botchain.ai/address/0xe822F7F3FD58c89cdcb6dEdADAb273a503F7DF63#code)
+

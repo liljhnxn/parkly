@@ -234,7 +234,7 @@ export function ExploreSpaces({
                       Hourly Rate
                     </span>
                     <span className="text-sm font-bold text-emerald-300 font-mono">
-                      {formatEther(space.hourlyRate)} BOHR
+                      {formatEther(space.hourlyRate)} BOT
                     </span>
                   </div>
 
@@ -264,7 +264,7 @@ export function ExploreSpaces({
                         target="_blank"
                         rel="noreferrer"
                         className="p-1 hover:text-white transition rounded"
-                        title="View on BohrScan"
+                        title="View on BotchainScan"
                         onClick={(e) => e.stopPropagation()}
                       >
                         <ExternalLink className="w-3 h-3 text-gray-400" />

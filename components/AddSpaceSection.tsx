@@ -151,7 +151,7 @@ export function AddSpaceSection({ onSpaceAdded }: AddSpaceSectionProps) {
               <span>List a New Parking Space</span>
             </h2>
             <p className="text-xs sm:text-sm text-gray-400 mt-0.5">
-              Set your space details and earn BOHR whenever drivers reserve your slot.
+              Set your space details and earn BOT whenever drivers reserve your slot.
             </p>
           </div>
         </div>
@@ -212,7 +212,7 @@ export function AddSpaceSection({ onSpaceAdded }: AddSpaceSectionProps) {
                       className="inline-flex items-center gap-1.5 text-xs text-emerald-300 hover:text-white font-medium underline underline-offset-4 transition"
                     >
                       <ExternalLink className="w-3.5 h-3.5" />
-                      View on BohrScan Explorer
+                      View on BotchainScan Explorer
                     </a>
                   )}
                 </div>
@@ -271,7 +271,7 @@ export function AddSpaceSection({ onSpaceAdded }: AddSpaceSectionProps) {
               {/* Hourly Rate */}
               <div>
                 <label className="block text-xs font-semibold text-gray-300 mb-1.5">
-                  Hourly Rate (in BOHR)
+                  Hourly Rate (in BOT)
                 </label>
                 <div className="relative">
                   <Coins className="w-4 h-4 text-gray-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
@@ -283,7 +283,7 @@ export function AddSpaceSection({ onSpaceAdded }: AddSpaceSectionProps) {
                     placeholder="0.05"
                     value={hourlyRateInput}
                     onChange={(e) => setHourlyRateInput(e.target.value)}
-                    className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-charcoal-850 border border-charcoal-750 text-sm text-gray-100 placeholder:text-gray-500 focus:outline-none focus:border-emerald-500/50 transition font-mono"
+                    className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-charcoal-850 border border-charcoal-755 text-sm text-gray-100 placeholder:text-gray-500 focus:outline-none focus:border-emerald-500/50 transition font-mono"
                   />
                 </div>
               </div>
@@ -291,7 +291,7 @@ export function AddSpaceSection({ onSpaceAdded }: AddSpaceSectionProps) {
 
             <div className="flex items-center justify-between pt-2">
               <p className="text-[11px] text-gray-500">
-                Contract network: Botchain Testnet (Chain ID 968)
+                Contract network: Botchain Mainnet (Chain ID 677)
               </p>
 
               <button

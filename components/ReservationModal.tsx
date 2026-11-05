@@ -332,7 +332,7 @@ export function ReservationModal({
                     className="inline-flex items-center gap-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold underline transition"
                   >
                     <ExternalLink className="w-4 h-4" />
-                    View Transaction on BohrScan
+                    View Transaction on BotchainScan
                   </a>
                 </div>
               )}
@@ -348,7 +348,7 @@ export function ReservationModal({
                     </span>
                   </div>
                   <span className="text-xs font-mono font-semibold text-emerald-300">
-                    {formatEther(space.hourlyRate)} BOHR / hr
+                    {formatEther(space.hourlyRate)} BOT / hr
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5 text-xs text-gray-400">
@@ -412,7 +412,7 @@ export function ReservationModal({
                       Estimated Fee
                     </span>
                     <span className="font-mono font-bold text-emerald-300">
-                      ~{parseFloat(estimatedCost).toFixed(4)} BOHR
+                      ~{parseFloat(estimatedCost).toFixed(4)} BOT
                     </span>
                   </div>
                 </div>

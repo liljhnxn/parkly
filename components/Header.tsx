@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useAccount, useConnect, useDisconnect, useSwitchChain, useBalance } from "wagmi";
-import { botchainTestnet } from "@/lib/chain";
+import { botchainMainnet } from "@/lib/chain";
 import { shortenAddress, getExplorerAddressUrl } from "@/lib/contracts/config";
 import { useToast } from "@/app/providers";
 import {
@@ -34,7 +34,7 @@ export function Header() {
     setMounted(true);
   }, []);
 
-  const isWrongNetwork = mounted && isConnected && chainId !== botchainTestnet.id;
+  const isWrongNetwork = mounted && isConnected && chainId !== botchainMainnet.id;
 
   const handleCopy = () => {
     if (!address) return;
@@ -80,7 +80,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           {isWrongNetwork && (
             <button
-              onClick={() => switchChain({ chainId: botchainTestnet.id })}
+              onClick={() => switchChain({ chainId: botchainMainnet.id })}
               className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-medium hover:bg-amber-500/20 transition cursor-pointer"
             >
               <AlertTriangle className="w-4 h-4 text-amber-400 animate-pulse" />
@@ -151,7 +151,7 @@ export function Header() {
                     className="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs text-gray-300 hover:bg-charcoal-800 hover:text-white transition"
                   >
                     <ExternalLink className="w-4 h-4" />
-                    <span>View on BohrScan</span>
+                    <span>View on BotchainScan</span>
                   </a>
 
                   <div className="border-t border-charcoal-800 my-1" />

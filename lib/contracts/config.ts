@@ -1,13 +1,13 @@
 import { Address } from "viem";
 import deploymentData from "./deployment.json";
 
-export const BOTCHAIN_CHAIN_ID = 968;
+export const BOTCHAIN_CHAIN_ID = 677;
 export const BOTCHAIN_RPC_URL =
-  process.env.NEXT_PUBLIC_BOTCHAIN_RPC_URL || "https://rpc.bohr.life";
+  process.env.NEXT_PUBLIC_BOTCHAIN_RPC_URL || "https://rpc.botchain.ai";
 export const BOTCHAIN_EXPLORER_URL =
-  process.env.NEXT_PUBLIC_BOTCHAIN_EXPLORER || "https://scan.bohr.life";
+  process.env.NEXT_PUBLIC_BOTCHAIN_EXPLORER || "https://scan.botchain.ai";
+export const TOKEN_SYMBOL = "BOT";
 
-// Read from NEXT_PUBLIC_CONTRACT_ADDRESS, or fallback to deployment.json address
 export const PARKLY_CONTRACT_ADDRESS: Address = (process.env
   .NEXT_PUBLIC_CONTRACT_ADDRESS ||
   (deploymentData as { address?: string }).address ||
